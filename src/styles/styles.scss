@@ -1,7 +1,6 @@
 // import Bootstrap functions
 @import "~bootstrap/scss/functions";
 
-
 // import theme variables
 @import 'variables';
 
@@ -34,43 +33,6 @@
     opacity: 0;
   }
 }
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Values
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Blog
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -162,7 +124,7 @@ h6 {
 }
 
 #topbar {
-  background: #939393;
+  background: #5a6ebb;
   font-size: 14px;
   padding: 0;
   color: rgba(255, 255, 255, 0.8);
@@ -548,7 +510,7 @@ h6 {
 #hero {
   width: 100%;
   height: 60vh;
-  background: url("../assets/img/hero-bg.jpg") center center;
+  background: url("../assets/img/hero-bg_2.png") center center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -557,7 +519,7 @@ h6 {
 
   &:before {
     content: "";
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -621,7 +583,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff9f7;
+  background-color: #f7f8ff;
 }
 
 .section-title {
@@ -750,7 +712,7 @@ section {
   .icon-boxes {
     h4 {
       font-size: 18px;
-      color: #7f6d68;
+      color: $primary-hover;
       margin-bottom: 15px;
     }
 
@@ -772,7 +734,7 @@ section {
       justify-content: center;
       width: 64px;
       height: 64px;
-      border: 2px solid #ffcbba;
+      border: 2px solid $primary-hover;
       border-radius: 50px;
       transition: 0.5s;
       background: #fff;
@@ -1075,7 +1037,7 @@ section {
 
 .testimonials {
   padding: 80px 0;
-  background: url("../assets/img/testimonials-bg.jpg") no-repeat;
+  background: url("../assets/img/testimonials-bg3.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1275,7 +1237,7 @@ section {
         transition: 0.3s;
 
         &:hover {
-          color: #ffa587;
+          color: $primary-hover;
         }
       }
     }
@@ -1588,7 +1550,7 @@ section {
       position: absolute;
       right: 0;
       left: 20px;
-      color: #ffb8a1;
+      color: lighten($color: $primary-hover, $amount: 20);
     }
 
     .icon-show {
@@ -1640,7 +1602,7 @@ section {
       color: $primary;
       border-radius: 50%;
       padding: 8px;
-      border: 2px dotted #ffded4;
+      border: 2px dotted lighten($color: $primary-hover, $amount: 30);
       float: left;
     }
 
@@ -2044,7 +2006,7 @@ section {
 
         &:focus {
           box-shadow: none;
-          border-color: #ffa587;
+          border-color: $primary-hover;
         }
       }
 
@@ -2055,7 +2017,7 @@ section {
 
         &:focus {
           box-shadow: none;
-          border-color: #ffa587;
+          border-color: $primary-hover;
         }
       }
 
@@ -2287,7 +2249,7 @@ section {
 
   .footer-top {
     padding: 60px 0 30px 0;
-    background: #fff9f7;
+    background: #f7f8ff;
 
     .footer-contact {
       margin-bottom: 30px;
@@ -2327,7 +2289,7 @@ section {
 
         i {
           padding-right: 2px;
-          color: #ffa587;
+          color: $primary-hover;
           font-size: 18px;
           line-height: 1;
         }
@@ -2375,7 +2337,7 @@ section {
       position: relative;
       border-radius: 50px;
       text-align: left;
-      border: 1px solid #ffe2d9;
+      border: 1px solid #c8c8ce;
 
       input[type=email] {
         border: 0;
@@ -2531,12 +2493,3 @@ section {
     }
   }
 }
-
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
-
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
-
-/* Importing Datepicker SCSS file. */
-@import "~ngx-bootstrap/datepicker/bs-datepicker";

@@ -3,12 +3,12 @@
   <div class="container d-flex justify-content-center justify-content-md-between">
     <div class="contact-info d-flex align-items-center">
       <i class="bi bi-envelope d-flex align-items-center"><a
-          href="mailto:contact@example.com">contact@hamiltonrappold.com</a></i>
+          href="mailto:contact@hamiltonrappold.com">contact@hamiltonrappold.com</a></i>
       <i class="bi bi-phone d-flex align-items-center ms-4"><span>614-370-8354</span></i>
     </div>
 
     <div class="cta d-none d-md-flex align-items-center">
-      <a href="#about" class="scrollto">Get Started</a>
+      <a href="#about" class="scrollto">Learn More</a>
     </div>
   </div>
 </section>
@@ -18,7 +18,7 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <h1><a href="/">H&R Industrial Services</a></h1>
+      <h1><a href="/"><img src="assets/img/logo-1.png" alt=""> <small>H&R INDUSTRIAL SERVICES</small></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
@@ -36,15 +36,18 @@
 
   </div>
 </header><!-- End Header -->
+<alert [isOpen]="formAlert.show" [dismissible]="true" [type]="'success'" style="position: fixed; z-index: 1000; top: 0px; width: 100%; z-index: 100;">
+  <strong>Success!</strong> {{formAlert.title}} {{formAlert.text}}
+</alert>
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
   <div class="container" data-aos="fade-in">
-    <h1>Welcome to H&R Industrial Services</h1>
-    <h2>Consectetur ipsum cupidatat ea aliquip voluptate quis id eu pariatur quis</h2>
+    <h1>H&R INDUSTRIAL SERVICES</h1>
+    <h2>Reliable Professionals Providing High-Quality, Cost Effective Industrial Services</h2>
     <div class="d-flex align-items-center">
       <i class="bx bxs-right-arrow-alt get-started-icon"></i>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <a href="#about" class="btn-get-started scrollto">Learn More</a>
     </div>
   </div>
 </section><!-- End Hero -->
@@ -58,11 +61,11 @@
       <div class="row">
         <div class="col-xl-4 col-lg-5" data-aos="fade-up">
           <div class="content">
-            <h3>Why Choose H&R Industrial Services for your company needs?</h3>
+            <h3>Why Choose H&R Industrial Services?</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-              Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              With the combination of exceptional customer service and a highly trained team, H&R Industrial Services will build
+and service for your future.  From installing multiple types of racking systems, shelving systems, material handling equipment to
+facility safety/security support equipment, H&R Industrial Services has successfully and efficiently completed projects all over the United States.
             </p>
             <div class="text-center">
               <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -74,23 +77,23 @@
             <div class="row">
               <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon-box mt-4 mt-xl-0">
-                  <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <i class="bx bx-wrench"></i>
+                  <h4>Installation</h4>
+                  <p>Multiple Types of Racking Systems, Shelving Systems, Material Handling Equipment & More</p>
                 </div>
               </div>
               <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box mt-4 mt-xl-0">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <i class="bx bx-reset"></i>
+                  <h4>Takedown/Relocation</h4>
+                  <p>We can internally support the transportation of materials from point A to point B.</p>
                 </div>
               </div>
               <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box mt-4 mt-xl-0">
-                  <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <i class="bx bx-plus-medical"></i>
+                  <h4>Safety/Security</h4>
+                  <p>Safety Is A Priority, And We Offer Facility Safety/Security Support Equipment</p>
                 </div>
               </div>
             </div>
@@ -114,28 +117,29 @@
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
           <h4 data-aos="fade-up">About us</h4>
-          <h3 data-aos="fade-up">Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-          <p data-aos="fade-up">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed
-            minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint
-            et id nulla tenetur. Suscipit aut voluptate.</p>
+          <h3 data-aos="fade-up">H&R Industrial Services takes pride in every completed job.</h3>
+          <p data-aos="fade-up">H&R Industrial Services was founded and built by two guys who saw an opportunity
+            to provide quality service and knowledge to every type of mechanical and industrial project.
+            As H&R Industrial Services continues to grow and maintain an excellent service rating for project completion and safety,
+            we are looking forward to a bright future! </p>
 
           <div class="icon-box" data-aos="fade-up">
             <div class="icon"><i class="bx bx-fingerprint"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <h4 class="title"><a href="">Priority Point 1</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
               occaecati cupiditate non provident</p>
           </div>
 
           <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bx-gift"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <h4 class="title"><a href="">Priority Point 2</a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
               voluptatum deleniti atque</p>
           </div>
 
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bx bx-atom"></i></div>
-            <h4 class="title"><a href="">Dine Pad</a></h4>
+            <h4 class="title"><a href="">Priority Point 3</a></h4>
             <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut
               deserunt minus aut eligendi omnis</p>
           </div>
@@ -174,60 +178,142 @@
 
       <div class="section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <p>H&R Industrial Services multi-specialty trained installers have completed projects that include, but are not limited to:</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6" data-aos="fade-up">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-              occaecati cupiditate non provident</p>
+            <div class="icon"><i class="bi bi-arrow-bar-up"></i></div>
+            <h4 class="title"><a href="">Structural Rack</a></h4>
+            <p class="description">High-quality, heavy-channel steel that can store heavy pallets and withstand harsh conditions, such as lift truck impact.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat tarad limino ata</p>
+            <div class="icon"><i class="bi bi-truck"></i></div>
+            <h4 class="title"><a href="">Drive-in Rack</a></h4>
+            <p class="description">A cost-effective, high density storage system
+              that allows storage of pallets multiple positions deep, reducing the space required for aisles.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur</p>
+            <div class="icon"><i class="bi bi-sort-up"></i></div>
+            <h4 class="title"><a href="">Selective Racking</a></h4>
+            <p class="description">one pallet deep and has a maximum of two racks that are placed one after the other.
+              It follows a First in First Out (FIFO) racking system.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum</p>
+            <div class="icon"><i class="bi bi-arrow-bar-left"></i></div>
+            <h4 class="title"><a href="">Pushback Racking</a></h4>
+            <p class="description">Pallet storage method that allows pallets to be stored from 2 to 6 deep on either side of an aisle,
+              giving you higher storage density than other forms of racking.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque</p>
+            <div class="icon"><i class="bi bi-water"></i></div>
+            <h4 class="title"><a href="">Flow Rack</a></h4>
+            <p class="description">Helps with the flow of materials: material is introduced on one side and flows through the unit to the other side. </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-chevron-bar-left"></i></div>
+            <h4 class="title"><a href="">Pallet Flow Rack</a></h4>
+            <p class="description">Pallets are loaded at the back end of the rack system and gently “flow” down to the front of the lane at the opposite end.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-arrows-expand"></i></div>
+            <h4 class="title"><a href="">Span Track for Pallet Racking</a></h4>
+            <p class="description">A structure that fits into pallet rack making it easy to convert from static to dynamic storage.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-stoplights"></i></div>
+            <h4 class="title"><a href="">Guard Rail</a></h4>
+            <p class="description">Provides a physical and visual barrier to protect from forklift and powered vehicle accidents.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-arrow-right-square"></i></div>
+            <h4 class="title"><a href="">Guide Rail</a></h4>
+            <p class="description">**********************************************</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-layout-wtf"></i></div>
+            <h4 class="title"><a href="">Cantilever Rack</a></h4>
+            <p class="description">A storage system designed to store long, awkward, or bulky materials of virtually any length.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-arrow-counterclockwise"></i></div>
+            <h4 class="title"><a href="">Cable Reel Rack</a></h4>
+            <p class="description">Improve organization and maximize floor space, and they’re essential when workers pay out cable or wire from a consistent location.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
           <div class="icon-box">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-              soluta nobis est eligendi</p>
+            <div class="icon"><i class="bi bi-border-top"></i></div>
+            <h4 class="title"><a href="">Mezzanine</a></h4>
+            <p class="description">By building up, you can safely move operations to otherwise unused space and streamline operations in the process.</p>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-bezier2"></i></div>
+            <h4 class="title"><a href="">Conveyor Systems</a></h4>
+            <p class="description">Improve efficiency and throughput with automated tracks that move bulk material or discrete products from one area to another.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-chevron-bar-down"></i></div>
+            <h4 class="title"><a href="">Netting Systems</a></h4>
+            <p class="description">Helps protect people and reduce product damage in warehouses and storage areas.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-border-all"></i></div>
+            <h4 class="title"><a href="">Cages</a></h4>
+            <p class="description">Helps allow you to better protect inventory and equipment from theft or damage.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-arrow-up"></i></div>
+            <h4 class="title"><a href="">Fencing</a></h4>
+            <p class="description">Provides enhanced protection for assets, storage areas as well as the open areas on the property.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-bar-chart-steps"></i></div>
+            <h4 class="title"><a href="">Pick Modules</a></h4>
+            <p class="description">Racking systems that integrate different storage solutions inside multi-level work platforms that move product efficiently through a distribution facility.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-grid-fill"></i></div>
+            <h4 class="title"><a href="">Modular In-plant Offices</a></h4>
+            <p class="description">prefabricated offsite and are temporary or semi-permanent in nature.
+              Quick and easy installation into an existing warehouse or manufacturing facility.</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -293,13 +379,12 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <img src="https://ui-avatars.com/api/?name=Happy+Customer" class="testimonial-img" alt="">
+              <h3>Happy Customer</h3>
+              <h4>Not Listed</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                The install team did a good job and was easy to work with.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -447,17 +532,16 @@
 
       <div class="section-title">
         <h2 data-aos="fade-up">Team</h2>
-        <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-          quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-          Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p data-aos="fade-up">The H&R Industrial Services team is made up of highly experienced multi-specialty installers, supervisors, and support staff.
+          These team members are lead by a pair of owners who are dedicated to providing results that go above and beyond, and exceed customer expecations.</p>
       </div>
 
       <div class="row">
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="offset-md-3 offset-lg-3 col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
           <div class="member">
             <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="https://ui-avatars.com/api/?name=Joeseph+Rappold&background=2740a3&color=ffffff&size=600" class="img-fluid" alt="">
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -466,8 +550,13 @@
               </div>
             </div>
             <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4>Joeseph Rappold</h4>
+              <span>Part Owner</span>
+              <p class="pt-3">With over 14 years in the industry Joseph brings a level of knowledge that our clients appreciate.
+                He will walk our clients through project installation, ideas, and timelines.
+                The ability to trouble shoot and correct potential issues before the arise makes him an invaluable asset.
+                With a professional outlook and high skill level Joe leads our company to produce top quality results.
+                When Joe is not onsite, he enjoys time with his family.</p>
             </div>
           </div>
         </div>
@@ -475,7 +564,7 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="member">
             <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <img src="https://ui-avatars.com/api/?name=Jeff+Hamilton&background=2740a3&color=ffffff&size=600" class="img-fluid" alt="">
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -484,44 +573,12 @@
               </div>
             </div>
             <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <h4>Jeff Hamilton</h4>
+              <span>Part Owner</span>
+              <p class="pt-3">When you contact H&R Industrial services for your project needs you will speak with Jeff.
+                In the last ten years of his career, he experienced multiple aspects of the industrial industry.
+                With an honest and hardworking approach, success is defined by the production of a quality installation.
+                In his free time, he enjoys time with his family.</p>
             </div>
           </div>
         </div>
@@ -531,103 +588,14 @@
     </div>
   </section><!-- End Team Section -->
 
-  <!-- ======= Pricing Section ======= -->
-  <!-- <section id="pricing" class="pricing">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-aos="fade-up">Pricing</h2>
-        <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-          quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-          Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up">
-          <div class="box">
-            <h3>Free</h3>
-            <h4><sup>$</sup>0<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
-          <div class="box featured">
-            <h3>Business</h3>
-            <h4><sup>$</sup>19<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li>Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="box">
-            <h3>Developer</h3>
-            <h4><sup>$</sup>29<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li>Pharetra massa</li>
-              <li>Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <div class="box">
-            <span class="advanced">Advanced</span>
-            <h3>Ultimate</h3>
-            <h4><sup>$</sup>49<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li>Pharetra massa</li>
-              <li>Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
-  <!-- End Pricing Section -->
-
   <!-- ======= F.A.Q Section ======= -->
   <section id="faq" class="faq section-bg">
     <div class="container">
 
       <div class="section-title">
         <h2 data-aos="fade-up">F.A.Q</h2>
-        <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-          quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-          Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p data-aos="fade-up">H&R Industrial Services list of frequently asked questions. If you have a question that is not listed below, please feel free to <a href="mailto:contact@hamiltonrappold.com" target="_blank">Contact Us</a> directly or fill out the <a href="#contact">Contact Form</a>.
+          H&R Industrial Services is dedicated to providing you, our customers, with answers to all your questions so that we may better serve your needs.</p>
       </div>
 
       <div class="faq-list">
@@ -708,9 +676,8 @@
 
       <div class="section-title">
         <h2 data-aos="fade-up">Contact</h2>
-        <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
-          quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-          Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p data-aos="fade-up">Our experienced team is ready to answer any questions you may have. We pride ourselves in being experts in our field, and look forward to any opportunity to help you, our customer.
+          Just fill out the contact form below, and an H&R Industrial Service team member will contact you at your convienince.</p>
       </div>
 
       <div class="row justify-content-center">
@@ -719,19 +686,20 @@
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>Our Address</h3>
-            <p>13750 Broad St. SW Pataskala Ohio 43062</p>
+            <p><b>Shop Location:</b> 13750 Broad St. SW Pataskala Ohio 43062</p>
+            <p><b>Billing Address:</b> 291 Wendell Rd SW Etna Ohio 43068</p>
           </div>
         </div>
 
         <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="info-box">
+          <div class="info-box" style="padding-bottom: 68px;">
             <i class="bx bx-envelope"></i>
             <h3>Email Us</h3>
-            <p>info@hamiltonrappold.com.com<br>contact@hamiltonrappold.com.com</p>
+            <p>info@hamiltonrappold.com<br>contact@hamiltonrappold.com</p>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="info-box">
+          <div class="info-box" style="padding-bottom: 92px;">
             <i class="bx bx-phone-call"></i>
             <h3>Call Us</h3>
             <p>+1 614 370-8354</p>
@@ -754,14 +722,14 @@
               <input [(ngModel)]="formModel.subject" #contactSubject="ngModel" type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="form-group mt-3">
-              <textarea [(ngModel)]="formModel.msg" #contactMsg="ngModel" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea [(ngModel)]="formModel.msg" #contactMsg="ngModel" class="form-control" name="msg" rows="5" placeholder="Message" required></textarea>
             </div>
             <!-- <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div> -->
-            <div class="text-center"><button type="button" (click)="addContact(formModel.name, formModel.email, formModel.subject, formModel.msg, contactForm)">Send Message</button></div>
+            <div class="text-center"><button type="button" [disabled]="contactForm.invalid" (click)="addContact(formModel.name, formModel.email, formModel.subject, formModel.msg, contactForm)">Send Message</button></div>
           </form>
         </div>
 
@@ -782,20 +750,22 @@
         <div class="col-lg-3 col-md-6 footer-contact">
           <h3>H&R Industrial Services</h3>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            <b>Shop Location</b> 13750 Broad St. SW<br>
+            Pataskala Ohio 43062
+            United States <br>
+            <b>Billing Address:</b> 291 Wendell Rd SW<br>
+            Etna Ohio 43068<br><br>
+            <strong>Phone:</strong> +1 614 370-8354<br>
+            <strong>Email:</strong> info@hamiltonrappold.com<br>
           </p>
         </div>
 
         <div class="col-lg-2 col-md-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
           </ul>
@@ -804,17 +774,17 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Racks</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Rails</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Conveyors</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Netting</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">More</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4>Join Our Newsletter</h4>
-          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <p>Recieve updates and H&R Industrial Services news and more, every month</p>
           <form #subscribeForm="ngForm">
             <input [(ngModel)]="formModel.email" #subscriberEmail="ngModel" type="email" name="email"><button type="button" (click)="addSubscriber(formModel.email, subscribeForm)">Subscribe</button>
           </form>
@@ -847,6 +817,3 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
     class="bi bi-arrow-up-short"></i></a>
 
-<alert *ngIf="formAlert.show" [dismissible]="true" [type]="'success'" style="position: fixed; top: 0; width: 100%; z-index: 100;">
-  <strong>Success!</strong> {{formAlert.title}} {{formAlert.text}}
-</alert>

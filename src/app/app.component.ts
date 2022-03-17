@@ -2,20 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 // import Swiper core and required modules
 
-import * as Aos from 'aos'
+import * as Aos from 'aos';
 
 @Component({
   selector: 'hris-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements OnInit {
   title = 'hris-web';
+
   formModel: any = {};
+
   formAlert: any = {
     show: false,
     title: 'Way to go!',
-    text: ''
+    text: '',
   }
 
   constructor(private afs: AngularFirestore) { }
@@ -52,11 +55,15 @@ export class AppComponent implements OnInit {
     };
   }
 
+  getCollection(name: string) {
+    return this.afs.collection(name).valueChanges();
+  }
+
   ngOnInit() {
 
     Aos.init({
       useClassNames: true,
-      duration: 1000,
+      duration: 800,
       easing: 'ease-in-out',
       once: true,
       mirror: false
@@ -66,23 +73,24 @@ export class AppComponent implements OnInit {
     /**
      * Easy selector helper function
      */
-    const select = (el: any, all = false) => {
+    const select = (el: any, all: boolean = false): NodeListOf<any> | any => {
+      // console.log('Selected Element', el)
       el = el.trim()
       if (all) {
-        return [document.querySelectorAll(el)]
+        return document.querySelectorAll(el)
       } else {
         return document.querySelector(el)
       }
     }
 
     /**
-      * Easy event listener function
-      */
+    * Easy event listener function
+    */
     const on = (type: string, el: string | HTMLElement, listener: any, all = false) => {
-      let selectEl: any = select(el, all)
+      let selectEl: any = select(el, all);
       if (selectEl) {
         if (all) {
-          selectEl.forEach((e: any) => e.addEventListener(type, listener))
+          selectEl.forEach((e: any) => (e: EventSource) => e.addEventListener(type, listener))
         } else {
           selectEl.addEventListener(type, listener)
         }
@@ -92,24 +100,25 @@ export class AppComponent implements OnInit {
     /**
       * Easy on scroll event listener
       */
-    const onscroll = (el, listener) => {
+    const onscroll = (el: any, listener: any) => {
       el.addEventListener('scroll', listener)
     }
 
     /**
       * Navbar links active state on scroll
       */
-    let navbarlinks = select('#navbar .scrollto', true)
+    let navbarlinks = select('#navbar a.scrollto', true);
+    console.log('Links', navbarlinks)
     const navbarlinksActive = () => {
-      let position = window.scrollY + 200
-      navbarlinks.forEach(navbarlink => {
-        if (!navbarlink.hash) return
-        let section = select(navbarlink.hash)
-        if (!section) return
+      let position = window.scrollY + 200;
+      navbarlinks.forEach((navbarlink: any) => {
+        if (!navbarlink.hash) return;
+        let section: HTMLElement = select(navbarlink.hash);
+        if (!section) return;
         if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-          navbarlink.classList.add('active')
+          navbarlink.classList.add('active');
         } else {
-          navbarlink.classList.remove('active')
+          navbarlink.classList.remove('active');
         }
       })
     }
@@ -166,30 +175,31 @@ export class AppComponent implements OnInit {
       onscroll(document, toggleBacktotop)
     }
 
-    /**
-      * Mobile nav toggle
-      */
-    on('click', '.mobile-nav-toggle', function (e) {
-      select('#navbar').classList.toggle('navbar-mobile')
-      this.classList.toggle('bi-list')
-      this.classList.toggle('bi-x')
-    })
+
+      // Mobile nav toggle
+     on('click', '.mobile-nav-toggle', function (e) {
+       select('#navbar').classList.toggle('navbar-mobile')
+       this.classList.toggle('bi-list')
+       this.classList.toggle('bi-x')
+     })
+
 
     /**
       * Mobile nav dropdowns activate
+     on('click', '.navbar .dropdown > a', function (e: any) {
+       if (select('#navbar').classList.contains('navbar-mobile')) {
+         e.preventDefault()
+         this.nextElementSibling.classList.toggle('dropdown-active')
+       }
+     }, true)
       */
-    on('click', '.navbar .dropdown > a', function (e: any) {
-      if (select('#navbar').classList.contains('navbar-mobile')) {
-        e.preventDefault()
-        this.nextElementSibling.classList.toggle('dropdown-active')
-      }
-    }, true)
 
     /**
       * Scroll with ofset on links with a class name .scrollto
       */
     on('click', '.scrollto', function (e) {
       if (select(this.hash)) {
+        // console.log(this.hash)
         e.preventDefault()
 
         let navbar = select('#navbar')
@@ -217,7 +227,7 @@ export class AppComponent implements OnInit {
   }
 
   private toggleFormAlert(show: boolean, title: string, form: any, text?: string) {
-    form.formReset();
+    form.reset();
     this.formAlert.show = true;
     this.formAlert.title = title;
     this.formAlert.text = text || '';
