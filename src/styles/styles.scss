@@ -64,7 +64,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: #ff7e54;
+    color: $primary-hover;
     text-decoration: none;
   }
 }
@@ -1628,7 +1628,7 @@ section {
     .error-message {
       display: none;
       color: #fff;
-      background: #ed3c0d;
+      background: $primary-hover;
       text-align: left;
       padding: 15px;
       font-weight: 600;
@@ -1701,7 +1701,7 @@ section {
       transition: 0.4s;
 
       &:hover {
-        background: #ff7e54;
+        background: $primary-hover;
       }
     }
   }
@@ -2389,7 +2389,7 @@ section {
       transition: 0.3s;
 
       &:hover {
-        background: #ff7e54;
+        background: $primary-hover;
         color: #fff;
         text-decoration: none;
       }
