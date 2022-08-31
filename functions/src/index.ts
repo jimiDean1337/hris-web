@@ -45,7 +45,7 @@ exports.sendSubscriberEmail = functions.firestore
     }
   })
 
-async function sendContactEmail(name: string, email: string) {
+async function sendContactEmail(name: string, email: string, msg: string) {
   const mailOptions: MailOptions = {
     from: `"${APP_NAME}" info@hamiltonrappold.com`,
     to: email,
@@ -53,8 +53,16 @@ async function sendContactEmail(name: string, email: string) {
     text: `Thank you for contacting ${APP_NAME}! We value your input, and will respond within 48 hours.`
   };
 
+  const sendHomeOptions: MailOptions = {
+    from: `"${email}"`,
+    to: 'info@hamiltonrappold.com',
+    subject: `You Have A New Quote Request From ${name}`,
+    text: msg
+  }
+
   // The user subscribed to updates and the newsletter, send welcome email to user.
   await sendEmail(mailOptions);
+  await sendEmail(sendHomeOptions);
   return null;
 }
 
@@ -64,7 +72,7 @@ exports.sendContactEmail = functions.firestore
     const resource = context.resource;
     const contact: any = snap.data();
     if (snap.exists) {
-      return sendContactEmail(contact.name, contact.email)
+      return sendContactEmail(contact.name, contact.email, contact.msg)
         .then(res => console.log(res))
         .catch(err => console.log('ERROR adding to Contacts', err))
     } else {

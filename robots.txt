@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /nogooglebot/
+
+Allow: /
+
+Sitemap: https://hamiltonrappold.com/sitemap.xml

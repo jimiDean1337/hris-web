@@ -1,9 +1,23 @@
 rules_version = '2';
+2
 service cloud.firestore {
+3
   match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if
-          request.time < timestamp.date(2022, 3, 17);
+4
+    match /contacts/{contact} {
+5
+      allow write;
+6
     }
+7
+​
+8
+    match /subscribers/{subscriber} {
+9
+      allow write;
+10
+    }
+11
   }
+12
 }
